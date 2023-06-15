@@ -118,6 +118,7 @@ bool FramelessWindow::nativeEvent(const QByteArray &eventType, void *message, qi
         }
 
         // for auto hide taskbar
+        // WHY THE FUCK ISNT IT WORKING
         if ((max_f) && win32utils::Taskbar::isAutoHide())
         {
             int taskbarPos = win32utils::Taskbar::getPosition(msg->hwnd);
